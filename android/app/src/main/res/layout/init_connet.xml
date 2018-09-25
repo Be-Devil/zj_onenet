@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_l1_back"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/i_text0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="连接模式"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/i_text0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/WiFi名称"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="WiFi名称"
+            android:layout_margin="20dip"
+            android:textSize="30dp" />
+        <!--android:background="@drawable/shape1"-->
+        　
+
+        <AutoCompleteTextView
+            android:id="@+id/WiFi_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HUAWEI"
+            android:layout_margin="20dip"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/WiFi密码"
+            android:layout_weight="3"
+            android:textSize="30dp"
+            android:layout_margin="20dip"
+            android:text="WiFi密码"/>
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/WiFi_password"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_margin="20dip"
+            android:text="zjwy1234"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout2"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/服务器IP"
+            android:layout_weight="3"
+            android:layout_margin="20dip"
+            android:textSize="30dp"
+            android:text="服务器IP"/>
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/server_ip"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_margin="20dip"
+            android:text="192.168.43.1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout3"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/服务器端口号"
+            android:layout_weight="3"
+            android:textSize="30dp"
+            android:layout_margin="20dip"
+            android:text="服务器端口号"/>
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/server_port"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_margin="20dip"
+            android:text="1811"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/LinearLayout4"
+        android:orientation="horizontal">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/open_WifiAp"
+                android:textSize="30dp"
+                android:layout_margin="40dip"
+                android:layout_above="@+id/in_connet"
+                android:background="@drawable/shape1"
+                android:text="热点开关"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/in_connet"
+                    android:textSize="30dp"
+                    android:layout_margin="40dip"
+                    android:layout_alignParentBottom ="true"
+                    android:background="@drawable/shape1"
+                    android:text="连接"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/open_Wifi"
+                android:textSize="30dp"
+                android:layout_margin="40dip"
+                android:layout_above="@+id/Return"
+                android:background="@drawable/shape1"
+                android:text="Wifi开关"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Return"
+                    android:textSize="30dp"
+                    android:layout_margin="40dip"
+                    android:layout_alignParentBottom ="true"
+                    android:background="@drawable/shape1"
+                    android:text="返回"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_l1_back"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:id="@+id/Pattern"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape"
+        android:text="切换服务器"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:text="接入设备："
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/EnchantingFlower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="妖艳花"
+            android:layout_margin="20dip"
+            android:background="@drawable/shape1"
+            android:textSize="30dp" />
+        　
+
+        <Button
+            android:id="@+id/SmartCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="智能小车"
+            android:layout_margin="20dip"
+            android:background="@drawable/shape1"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout1"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/WaterSprayTank"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_margin="20dip"
+            android:background="@drawable/shape1"
+            android:text="喷水罐"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/InfraredLaser"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_margin="20dip"
+            android:background="@drawable/shape1"
+            android:text="红外激光"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout2"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ToyCar"
+            android:layout_weight="1"
+            android:layout_margin="20dip"
+            android:textSize="30dp"
+            android:background="@drawable/shape1"
+            android:text="玩具车"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sack"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_margin="20dip"
+            android:background="@drawable/shape1"
+            android:text="骰子机"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout3"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/snake"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_margin="20dip"
+            android:background="@drawable/shape1"
+            android:text="玩具蛇"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mouse"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_margin="20dip"
+            android:background="@drawable/shape1"
+            android:text="玩具鼠"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout4"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/FMoppingRobot"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_margin="20dip"
+            android:background="@drawable/shape1"
+            android:text="扫地机器人"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SteeringEngine"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_margin="20dip"
+            android:background="@drawable/shape1"
+            android:text="逗猫棒"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout5"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_margin="20dip"
+            android:background="@drawable/shape1"
+            android:text="测试按钮"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text2"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:layout_margin="20dip"
+            android:background="@drawable/shape1"
+            android:text="测试按钮"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="horizontal" >-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="vertical" >-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical" >-->
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/Pattern"-->
+                <!--android:text="模式切换"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical" >-->
+             <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                 <!--android:id="@+id/EnchantingFlower"-->
+                 <!--android:text="妖艳花"/>-->
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/SmartCar"-->
+                <!--android:text="智能小车"/>-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/WaterSprayTank"-->
+                <!--android:text="喷水罐"/>-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/infrared"-->
+                <!--android:text="红外激光"/>-->
+
+            <!--<Button-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/ToyCar"-->
+                <!--android:text="玩具车"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="horizontal" >-->
+        <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="horizontal" >-->
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>
